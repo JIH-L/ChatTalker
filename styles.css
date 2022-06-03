@@ -1,0 +1,519 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font: normal normal normal 16px/24px Noto Sans TC;
+  margin: 0;
+}
+
+h3 {
+  font: normal normal bold 28px/40px Noto Sans TC;
+  text-align: center;
+  margin: 16px 0;
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.green {
+  color: #56C4C5;
+  font: normal normal bold 16px/24px Noto Sans TC;
+  margin: 0;
+}
+
+.circle {
+  min-width: 86px;
+  height: 86px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan-btn {
+  width: 128px;
+  height: 40px;
+  font: normal normal normal 16px/24px Noto Sans TC;
+  color: #FFFFFF;
+  background-color: #FF5D50;
+  border-radius: 22px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.plan-btn.bg-green {
+  background-color: #56C4C5;
+}
+
+.ball01 {
+  position: absolute;
+  z-index: -1;
+  width: 126px;
+  top: calc(100vh - 126px);
+  left: -77px;
+}
+
+.ball02 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+  position: absolute;
+  z-index: -1;
+  top: 3013px;
+  right: 0px;
+  width: 88px;
+  height: 135px;
+  background-size: 135px;
+}
+
+.ball03 {
+  position: absolute;
+  z-index: -1;
+  width: 126px;
+  top: 4722px;
+  left: -50px;
+}
+
+header {
+  border-bottom: 2px solid #FFD153;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 72px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h1 img {
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+header .logo {
+  max-width: 130px;
+}
+
+.banner {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg) no-repeat;
+  background-position: center 100%;
+  margin: 32px 0 0 0;
+}
+
+.banner h2 {
+  font: normal normal bold 32px/46px Noto Sans TC;
+  margin: 8px 0 16px;
+}
+
+.platform {
+  margin: 60px 0;
+}
+
+.platform__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 252px;
+  margin: 0 auto 24px;
+}
+
+.platform__card h4 {
+  font: normal normal bold 18px/26px Noto Sans TC;
+  margin: 16px 0;
+}
+
+.platform__card p {
+  color: #747474;
+  text-align: center;
+}
+
+.platform__card img {
+  max-width: 60px;
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.service__wrap {
+  margin-top: 32px;
+}
+
+.service__card {
+  width: 260px;
+  margin: 0 auto 24px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.service__card img {
+  display: block;
+}
+
+.service__card-text {
+  text-align: center;
+  padding: 16px 16px 24px 16px;
+}
+
+.service__card-text h4 {
+  margin-bottom: 16px;
+}
+
+.brand {
+  margin-bottom: 60px;
+}
+
+.brand__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 32px;
+}
+
+.brand__text p {
+  text-align: center;
+}
+
+.brand__text .plan-btn {
+  margin-top: 16px;
+}
+
+.brand__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 230px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  margin: 0 auto 24px;
+  padding: 32px 24px 48px;
+}
+
+.brand__card h4 {
+  margin: 24px 0 20px;
+}
+
+.rate {
+  margin-bottom: 60px;
+}
+
+.rate__card {
+  position: relative;
+  margin-top: 56px;
+  padding: 48px 16px 16px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  background-color: #fff;
+}
+
+.rate__card .user {
+  position: absolute;
+  top: -56px;
+  left: 32px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.rate__card .description {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.rate__card .company {
+  font: normal normal bold 16px/24px Noto Sans TC;
+  color: #212121;
+}
+
+.rate__card .name-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
+}
+
+.rate__card .name-wrap .star-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
+.rate__card .name-wrap .star {
+  display: block;
+  width: 16px;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg) no-repeat center;
+  background-size: contain;
+}
+
+.rate__card:not(:first-child) {
+  display: none;
+}
+
+.rate__pager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.rate__pager span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #DDDDDD;
+  border-radius: 50px;
+}
+
+.rate__pager span.active {
+  background-color: #FFD153;
+  width: 16px;
+}
+
+.footer__top {
+  height: 461px;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg) no-repeat top center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__top p {
+  font: normal normal bold 24px/35px Noto Sans TC;
+  margin-bottom: 24px;
+}
+
+.footer__top a {
+  margin-bottom: 60px;
+}
+
+.footer__bottom {
+  text-align: center;
+  padding: 16px 0;
+  background-color: #F5F5F5;
+}
+
+@media (min-width: 786px) {
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    margin-bottom: 48px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .green {
+    font-size: 18px;
+  }
+  body {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg) no-repeat top right;
+  }
+  .ball01 {
+    width: 360px;
+    top: calc(100vh - 180px);
+    left: -222px;
+  }
+  .ball02 {
+    top: 1633px;
+    width: 210px;
+    height: 310px;
+    background-size: 310px;
+  }
+  .ball03 {
+    top: 2633px;
+    left: 55px;
+  }
+  .container {
+    max-width: 1085px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  header {
+    border-bottom: 0;
+  }
+  header .container {
+    height: 88px;
+  }
+  header .logo {
+    max-width: 218px;
+  }
+  .platform__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    margin: 30px auto 217px;
+  }
+  .banner__wrap {
+    width: 50%;
+  }
+  .banner img {
+    width: 50%;
+  }
+  .service {
+    margin-bottom: 100px;
+  }
+  .service__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 16px;
+  }
+  .service__card {
+    width: calc(25% - 16px);
+  }
+  .brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 137px;
+    margin-bottom: 100px;
+  }
+  .brand__text {
+    width: 359px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 49px;
+    margin-bottom: 0;
+  }
+  .brand__text h3, .brand__text p {
+    text-align: start;
+  }
+  .brand__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 507px;
+    row-gap: 28px;
+    -webkit-column-gap: 47px;
+            column-gap: 47px;
+  }
+  .brand__card {
+    margin: 0;
+  }
+  .rate {
+    margin-bottom: 100px;
+  }
+  .rate__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+  }
+  .rate__card:not(:first-child) {
+    display: block;
+  }
+  .footer__top {
+    height: 503px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+    background-size: cover;
+  }
+  .footer__top p {
+    font: normal normal bold 32px/46px Noto Sans TC;
+    margin-bottom: 48px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
